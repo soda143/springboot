@@ -34,3 +34,5 @@
 
 使用例
 
+./picture/image_1.
+
