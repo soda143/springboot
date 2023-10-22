@@ -1,4 +1,4 @@
-# pict-converter
+# Springboot
 
 油絵風に画像変換処理をしてくれるwebサイトです。
 
@@ -37,23 +37,26 @@
 ### 1.
 [http://localhost:8080/top](http://localhost:8080/top)にて、「ファイルを選択」をクリックします。
 
-
 ![image_1.png](./picture/image_1.png)
 
-２．ローカル内の画像を選択します。
+### 2.
+ローカル内の画像を選択します。
+試しに以下の画像を選択してみます。
+
+![imag_4.jpg](./picture/imag_4.jpg)
+
+### 3.
+アップロードをクリックします。
 
 ![image_2.png](./picture/image_2.png)
 
-試しに上記の画像を選択しました。
-
-３．アップロードをクリックします。
+### 4.
+画像の変換が完了後、画面が遷移、変換後の画像が表示されます。
 
 ![image_3.png](./picture/image_3.png)
 
-４．画像の変換が完了後、画面が遷移、変換後の画像が表示されます。
 
 
-![image_4.jpg](./picture/image_4.jpg)
 
 
 
