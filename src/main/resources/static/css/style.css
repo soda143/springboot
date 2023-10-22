@@ -1,0 +1,102 @@
+h1 {
+    position: relative;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h2:before {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 5px;
+    content: '';
+    border-radius: 3px;
+    background: #e64242;
+}
+
+h5 {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.explan {
+    position: relative;
+    text-align: center;
+}
+
+.explan2 {
+    text-align: left;
+    display: inline-block;
+}
+
+.input-group {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.upload-area {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.file-select {
+    width: 100%;
+    padding-right: 10px;
+    float: left;
+}
+
+.upload-btn {
+    margin-left: 10px;
+    float: left;
+}
+
+.tips {
+    padding-top: 2rem;
+    margin: 16px auto;
+    text-align: center;
+    display: block;
+}
+
+.resultView {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.showimg {
+    border: 2px solid;
+    position: relative;
+    border-color: rgb(43, 42, 42);
+    text-align: center;
+}
+
+.viewArea {
+    padding: 3rem;
+}
+
+.image_size_m {
+    width: 128px;
+    height: 128px;
+}
+
+.btnArea {
+    padding: 2rem;
+    display: flex;
+}
+
+.download {
+    margin: 0 auto;
+}
+
+.sendtop {
+    margin: 0 auto;
+}

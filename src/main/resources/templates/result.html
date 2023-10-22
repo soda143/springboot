@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+	<title>油絵風画像変換</title>
+</head>
+<body class="centering_body">
+	<div class="container">
+        <div class="card-body">
+            
+            <div class="resultView">
+                <div>
+                    <h1><span>画像の変換が完了しました！</span></h1>
+                </div>
+                
+                    <div class="showimg">
+                        
+                        <div class="viewArea">
+                            <img class="image_size_m" th:src="${pictConvData}" id="convImg"/>
+                        </div>
+                        <div class="btnArea">
+                            
+                            <div class="download">
+                                <form id="delete" name="pictConvFileDelForm" method="post" th:action="@{/delete}" >
+                                    <input type="hidden" id="afterDir" name="afterDir" th:value="${afterDir}"/>
+                                    <input type="hidden" id="fileName" name="fileName" th:value="${fileName}"/>
+                                    <input type="hidden" id="convImg" name="convImg" th:value="${pictConvData}"/>
+                                    <input type="hidden" id="downloadflg" name="downloadflg" th:value="${dlflg}"/>
+                                    <a th:href="${pictConvData}" class="btn btn-outline-secondary" id="downloadLink" onclick="downloadImg()">パソコンに保存する</a>
+                                </form>
+                            </div>
+                            
+                            <div class="sendtop">
+                                <form name="pictConvReTopForm" method="post" th:action="@{/reTopView}">
+                                    <input type="hidden" id="afterDir" name="afterDir" th:value="${afterDir}"/>
+                                    <input type="hidden" id="fileName" name="fileName" th:value="${fileName}"/>
+                                    <button class="btn btn-outline-secondary" id="top_btn" onclick="reselect()">再度画像を選ぶ</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                <div class="tips">
+                    <p class="explan">
+                        「パソコンに保存する」から画像のダウンロードが可能です。<br/>
+                        「再度画像を選ぶ」をクリックすると最初のページに戻ります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
