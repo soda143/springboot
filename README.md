@@ -32,7 +32,30 @@
 ### 5. Webアクセス
 - ブラウザを起動して、[http://localhost:8080/top](http://localhost:8080/top) にアクセスします。
 
-使用例
+## 使用方法
 
-./picture/image_1.
+### 1.
+[http://localhost:8080/top](http://localhost:8080/top)にて、「ファイルを選択」をクリックします。
+
+
+![image_1.png](./picture/image_1.png)
+
+２．ローカル内の画像を選択します。
+
+![image_2.png](./picture/image_2.png)
+
+試しに上記の画像を選択しました。
+
+３．アップロードをクリックします。
+
+![image_3.png](./picture/image_3.png)
+
+４．画像の変換が完了後、画面が遷移、変換後の画像が表示されます。
+
+
+![image_4.jpg](./picture/image_4.jpg)
+
+
+
+
 
